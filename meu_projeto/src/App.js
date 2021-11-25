@@ -1,22 +1,17 @@
-
 import './App.css';
-import HelloWorld from "./components/HelloWorld"
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
-const name = "Henrique"
-const soma = 2 + 22
-function calcula(a,b){
-  return a * b
-}
 
-const url = 'https://via.placeholder.com/150'
+const url = 'https://blocktrends.com.br/wp-content/uploads/2021/10/mark.jpg.webp'
+const shia = 'https://www.nydailynews.com/resizer/6UteSwwPi5Au8UBhxslLE3TP-XE=/630x630/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2GEDMZEAGYSA7VRBYDLX2UHVOY.jpg'
 function App() {
   return (
     <div className="App">
-      <h1>Olá {name}</h1>
-      <p>a soma é {soma}</p>
-      <p>{calcula(2,5)}</p>
-      <img src={url} alt="djfj" />
-      <HelloWorld />
+      <SayMyName name="Henrique" />
+      <Pessoa nome="Dilce" from="Barbacena" dog="Sebastian" mood="Pimpões" />
+      <img src={url}  />
+      <img src={shia}/>
     </div>
   );
 }
