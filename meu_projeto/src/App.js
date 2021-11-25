@@ -1,17 +1,19 @@
 import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import Header from './components/Header';
+import List from './components/List';
 
-
-const url = 'https://blocktrends.com.br/wp-content/uploads/2021/10/mark.jpg.webp'
-const shia = 'https://www.nydailynews.com/resizer/6UteSwwPi5Au8UBhxslLE3TP-XE=/630x630/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2GEDMZEAGYSA7VRBYDLX2UHVOY.jpg'
 function App() {
   return (
     <div className="App">
+      <Header />
       <SayMyName name="Henrique" />
       <Pessoa nome="Dilce" from="Barbacena" dog="Sebastian" mood="Pimpões" />
-      <img src={url}  />
-      <img src={shia}/>
+      <List marca="Porsh" ano_lançamento="{1955}" /> 
+      <List marca="Ferrari" ano_lançamento={1984} /> 
+      <List marca="Ford" ano_lançamento={1954} /> 
+      <List />
     </div>
   );
 }
